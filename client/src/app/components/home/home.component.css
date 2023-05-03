@@ -1,0 +1,183 @@
+.homepage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.header{
+    background-image: url("/assets/images/background.png");
+    /* height: 175px; */
+    display: flex;
+    
+}
+.head_button{
+        font-size: 25px;
+        font-family: "Bodwars";
+        color: rgb(255, 255, 255);      
+}
+
+#headnav{
+    font-size: 25px;
+    font-family: "Bodwars";
+    color: rgb(255, 255, 255);
+  }
+
+.banner{
+    /* height: 660px; */
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(95deg, #249f49,  #f9bb13);
+    padding-top: 10rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.banner_top{
+    display: flex;
+    justify-content: space-around;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+.banner_bottom{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2.5rem;
+  /* padding: 5rem; */
+  /* background: url("../../../assets/images/boat.png"); */
+}
+
+.responsive_logo{
+    max-width: 100%;
+    height: auto;
+    min-width: 100px;
+}
+
+.card{
+    border:none;
+}
+
+.about{
+    padding: 4rem 2.5rem;
+}
+
+.read_more{
+    background-color: rgb(253, 30, 74);
+    width: 141px;
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+}
+
+.cele{
+        font-size: 72px;
+        font-family: "Bodwars";
+        color: rgb(56, 85, 166);  
+        line-height: 60px;   
+}
+ 
+
+.view_all{
+    font-size: 17px;
+    font-family: "Montserrat";
+    color: rgb(60, 85, 164);
+    font-weight: bold;
+    width: 141px;
+}
+
+  
+.speakers{
+    background-image: url("/assets/images/background_speakers.png");
+    padding: 2rem;
+}
+
+.speakers_name_1{
+        font-size: 18px;
+        font-family: "Bodwars";
+        color: rgb(255, 255, 255);
+        background-color: #249f49;
+}
+.row1_speakers{
+    /* font-size: 72px; */
+    font-family: "Bodwars";
+    color: rgb(255, 255, 255);
+    
+}
+
+.book{
+    /* background-image:  url("../../../assets/images/Layer.png"); */
+    background-image: linear-gradient(105deg, #f9bb13,#249f49);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    
+}
+
+.footor_Link{
+    display: flex;
+    /* justify-content: center; */
+    
+}
+
+.footer_copyright{
+    display: flex;
+}
+
+.footer_box{
+    border: 1px solid  rgb(60, 85, 164);
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border:none;
+    padding: 10px;
+    background-color: white;
+    font-size: 1rem;
+    font-family: "Bodwars";
+    color: rgb(60, 85, 164);
+}
+
+
+/* .bottom_button{
+    background-image: url("../../../assets/images/red_button.png");
+    background-color: red; 
+    background-repeat: no-repeat;
+} */
+
+.footer_bottom{
+    display: flex;
+    padding-top: 2rem;
+    align-items: center; 
+    flex-wrap: column;
+
+}
+
+.footer_copyright{
+        font-size: 1rem;
+        font-family: "Montserrat";
+        color: rgb(60, 85, 164);
+        font-weight: bold;   
+        padding-bottom: 10px;
+        justify-content: space-evenly;   
+}
+
+.footer_icons{
+    padding-left: 5px;
+}
+
+button{
+    outline: none;
+}
+
+

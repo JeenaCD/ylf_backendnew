@@ -1,0 +1,43 @@
+.registerpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+
+.header{
+    background-image: url("/assets/images/background.png");
+    /* height: 175px; */
+    display: flex;
+    
+}
+.head_button{
+        font-size: 25px;
+        font-family: "Bodwars";
+        color: rgb(255, 255, 255);      
+}
+
+#headnav{
+    font-size: 25px;
+    font-family: "Bodwars";
+    color: rgb(255, 255, 255);
+  }
+
+.contents{
+    display:flex;
+    
+}
+
+.bread{
+    margin-top: 9rem;
+    padding-left: 3rem;
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+}
+
+.input_box{
+    padding-bottom: 10px;
+}

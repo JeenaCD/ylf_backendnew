@@ -1,0 +1,36 @@
+<div class="upi_page">
+    <div>
+        <div>
+            <label for="name">Name</label><br>
+            <input
+            type="text"
+            id="name"
+            name="name"
+            [(ngModel)]="payment.pn"
+          /> </div><br>
+          <div>
+            <label for="name">UPI ID</label><br>
+            <input
+            type="text"
+            id="name"
+            name="name"
+            [(ngModel)]="payment.pa"
+          /> </div><br>
+          <div>
+            <label for="name">Amount</label><br>
+            <input
+            type="text"
+            id="name"
+            name="name"
+            [(ngModel)]="payment.am"
+          /> </div><br>
+    </div>
+    <div>
+        <qrcode [qrdata]="'upi://pay?pn=Jeena C D&pa=jinapoomukathil-1@oksbi&cu=INR&am=1'" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+    </div>
+</div>
+
+
+
+
+

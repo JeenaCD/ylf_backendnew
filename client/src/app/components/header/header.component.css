@@ -1,0 +1,21 @@
+.logo{
+    /* border-radius: 50%; */
+}
+
+.header{
+    background-image: url("/assets/images/background.png");
+    height: 175px;
+    display: flex;
+    
+}
+.head_button{
+        font-size: 25px;
+        font-family: "Bodwars";
+        color: rgb(255, 255, 255);      
+}
+
+#headnav{
+    font-size: 25px;
+    font-family: "Bodwars";
+    color: rgb(255, 255, 255);
+  }
