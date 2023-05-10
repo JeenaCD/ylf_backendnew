@@ -1,4 +1,4 @@
-<div class="schedulepage">
+<div class="schedulepage" style=" background-image: linear-gradient(95deg, #249f49,  #f9bb13);">
   <div class="header responsive" id="header1" >
      
     <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="display: flex;justify-content: space-around;background-image: url(../../../assets/images/background.png)">
@@ -15,7 +15,7 @@
           <div ><a class="nav-item nav-link" href="#" style="color: white;">HOME </a></div> 
           <div> <a class="nav-item nav-link head_button"  style="color: white;" href="#about">ABOUT YLF</a></div>
           <div> <a class="nav-item nav-link head_button" style="color: white;" routerLink="/registration">REGISTRATION</a></div>
-          <!-- <div><a class="nav-item nav-link head_button" style="color: white;" (click)="downloadPDF()" href="#">SCHEDULE </a></div>  -->
+          <div><a class="nav-item nav-link head_button" style="color: white;" href="#">SCHEDULE </a></div> 
           <div class="nav-item dropdown">
            <a class=" nav-link dropdown-toggle head_button" style="color: white;cursor: pointer;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
              SCHEDULE
@@ -31,4 +31,30 @@
        </div>
      </nav> 
    </div>
+
+
+   <!-- <h1>PDF Example</h1>
+    <p>Open a PDF file <a href="../../../assets/ylf Logo.pdf">example</a></p> -->
+
+    <div class="box">
+      <div class="innerbox" >
+        <div style="padding: 10px;display: flex;justify-content: center;"><img src="../../../assets/images/malayalam_banner.png" class="responsive" style="height: 75%;width: 75%;"></div>
+        <div style="display: flex;justify-content: center;padding: 10px;align-items: center;">
+         <img src="../../../assets/images/pdf.jpg" style="height: 20%;width:5%" >
+          
+            <div style=" font-family: Montserrat;padding-left: 10px;font-size: 30px;">Schedule.pdf</div>
+
+        
+        </div>
+        <div style="display: flex;padding: 10px;">
+          <!-- <a  id="boxbutton" href="../../../assets/ylf Logo.pdf" target="_blank">Open</a> -->
+         <div style="margin: 5px;"> 
+          <button type="button" class="btn btn-primary btn-sm" id="boxbutton" (click)="open()">Open</button></div>
+          <div style="margin: 5px;">
+            <!-- <button type="button" class="btn btn-outline-primary" id="boxbutton" (click)="downloadpdf()">Download</button> -->
+            <button type="button" class="btn btn-primary btn-sm" id="boxbutton" (click)="downloadpdf()">Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>

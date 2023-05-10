@@ -11,11 +11,17 @@ export class HeaderComponent implements OnInit {
 
  ngOnInit():  void {
     
-      let link = document.createElement("a");
+   
+      
+  }
+
+  open(){
+    window.open('assets/Schedule.pdf');
+  }
+  downloadpdf(){
+       let link = document.createElement("a");
       link.download = "Schedule.pdf";
      link.href = "assets/Schedule.pdf";
       link.click();
-      
   }
-  
 }
