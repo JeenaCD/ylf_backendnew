@@ -7,10 +7,20 @@
 
 .header{
     background-image: url("/assets/images/background.png");
-    /* height: 175px; */
+    /* height: 132px; */
     display: flex;
     
 }
+
+download:hover{
+    background-image: url("/assets/images/background.png");
+    text-decoration: none;
+}
+
+.responsivehead {
+    max-width: 100%;
+    /* height: 150px; */
+  }
 .head_button{
         font-size: 25px;
         font-family: "Bodwars";
@@ -58,8 +68,15 @@
 
 .card{
     border:none;
+   
 }
 
+
+.card-img-top {
+    width: 80%;
+    height: 90%;
+    /* object-fit:cover; */
+}
 .about{
     padding: 4rem 2.5rem;
 }
@@ -101,7 +118,7 @@
         background-color: #249f49;
 }
 .row1_speakers{
-    /* font-size: 72px; */
+    font-size: 36px;
     font-family: "Bodwars";
     color: rgb(255, 255, 255);
     
@@ -137,6 +154,7 @@
     border: 1px solid  rgb(60, 85, 164);
     display: flex;
     flex-direction: column;
+    margin:2rem;
 }
 
 button{

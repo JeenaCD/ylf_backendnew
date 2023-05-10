@@ -1,23 +1,34 @@
-<div class="header" >
+<div class="schedulepage">
+  <div class="header responsive" id="header1" >
+     
     <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="display: flex;justify-content: space-around;background-image: url(../../../assets/images/background.png)">
-      <div class="container-fluid">
-      
-      <img src="../../../assets/images/logo.png" alt="hj" width="100" height="90"  class="responsive">
-            
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup"  >
-          <div class="navbar-nav" id="headnav" >
-           <div ><a class="nav-item nav-link" href="#" style="color: white;">HOME </a></div> 
-           <div> <a class="nav-item nav-link head_button"  style="color: white;" href="#">ABOUT YLF</a></div>
-           <div> <a class="nav-item nav-link head_button" style="color: white;" routerLink="/registration">REGISTRATION</a></div>
-           <div><a class="nav-item nav-link head_button" style="color: white;" href="#">SCHEDULE</a></div> 
-           <div><a class="nav-item nav-link head_button" style="color: white;" href="#">SPEAKERS</a></div> 
-           <div><a class="nav-item nav-link head_button" style="color: white;" href="#">CONTACT</a></div> 
-          </div>
-        </div>
-        </div>
-      </nav>
-    </div>
+     <div class="container-fluid">
+     
+     <img src="../../../assets/images/icon.png" alt="hj" width="100" height="90" >
+           
+       
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup"  >
+         <div class="navbar-nav mr-auto" id="headnav" >
+          <div ><a class="nav-item nav-link" href="#" style="color: white;">HOME </a></div> 
+          <div> <a class="nav-item nav-link head_button"  style="color: white;" href="#about">ABOUT YLF</a></div>
+          <div> <a class="nav-item nav-link head_button" style="color: white;" routerLink="/registration">REGISTRATION</a></div>
+          <!-- <div><a class="nav-item nav-link head_button" style="color: white;" (click)="downloadPDF()" href="#">SCHEDULE </a></div>  -->
+          <div class="nav-item dropdown">
+           <a class=" nav-link dropdown-toggle head_button" style="color: white;cursor: pointer;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             SCHEDULE
+           </a>
+           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="cursor: pointer;margin-top: -8px;margin-left: 8px;background-image: url(../../../assets/images/background.png)">
+             <a class="dropdown-item" class="download"  style="color: white; text-decoration: none;">Download PDF</a>
+           </div>
+         </div>
+          <div ><a class="nav-item nav-link head_button" style="color: white;" routerLink="/speakers">SPEAKERS</a></div> 
+          <div><a class="nav-item nav-link head_button" style="color: white;" href="#">CONTACT</a></div> 
+         </div>
+       </div>
+       </div>
+     </nav> 
+   </div>
+</div>

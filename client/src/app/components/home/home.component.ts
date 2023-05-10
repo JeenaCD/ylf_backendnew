@@ -12,4 +12,10 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  downloadPDF(){
+    let link = document.createElement("a");
+    link.download = "Schedule.pdf";
+    link.href = "assets/Schedule.pdf";
+    link.click();
+  }
 }

@@ -15,10 +15,18 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup"  >
           <div class="navbar-nav mr-auto" id="headnav" >
            <div ><a class="nav-item nav-link" href="#" style="color: white;">HOME </a></div> 
-           <div> <a class="nav-item nav-link head_button"  style="color: white;" href="#">ABOUT YLF</a></div>
+           <div> <a class="nav-item nav-link head_button"  style="color: white;" href="#about">ABOUT YLF</a></div>
            <div> <a class="nav-item nav-link head_button" style="color: white;" routerLink="/registration">REGISTRATION</a></div>
-           <div><a class="nav-item nav-link head_button" style="color: white;" href="#">SCHEDULE</a></div> 
-           <div><a class="nav-item nav-link head_button" style="color: white;" href="#">SPEAKERS</a></div> 
+           <!-- <div><a class="nav-item nav-link head_button" style="color: white;" (click)="downloadPDF()" href="#">SCHEDULE </a></div>  -->
+           <div class="nav-item dropdown">
+            <a class=" nav-link dropdown-toggle head_button" style="color: white;cursor: pointer;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              SCHEDULE
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="cursor: pointer;margin-top: -8px;margin-left: 8px;background-image: url(../../../assets/images/background.png)">
+              <a class="dropdown-item" class="download" (click)="downloadPDF()" style="color: white; text-decoration: none;">Download PDF</a>
+            </div>
+          </div>
+           <div ><a class="nav-item nav-link head_button" style="color: white;" routerLink="/speakers">SPEAKERS</a></div> 
            <div><a class="nav-item nav-link head_button" style="color: white;" href="#">CONTACT</a></div> 
           </div>
         </div>
@@ -26,7 +34,7 @@
       </nav> 
     </div>
 
-    <div class="banner">
+    <div class="banner" >
         <div class="banner_top">
             
             
@@ -44,9 +52,9 @@
             <img src="../../../assets/images/boat.png" alt="W3Schools.com" class="responsive"   >
         </div>
     </div> 
-    <div class="about">
+    <div class="about" id="about">
         <div class="row" >
-            <div class="col-sm-4"><img src="../../../assets/images/about.png" alt="W3Schools.com" class="responsive"   ></div>
+            <div class="col-sm-4" ><img src="../../../assets/images/about.png" alt="W3Schools.com" class="responsive"   ></div>
             <div class="col-sm-8" style="font-size: 16px;font-family: Montserrat;color: rgb(56, 85, 166);">
                 <div class="row">Youth, the powerhouse of our nation, is crucial in our journey forward. Only by grooming young people who are capable of action, perseverance and creativity, the country can progress with the times. Yuvadhara Magazine is a youth publication that has historically been instrumental in implementing this mission.
                 <br><br>
@@ -66,27 +74,40 @@
          <p class="responsive" style="text-align: center;"> YLF SPEAKERS</p>
             <!-- <img src="../../../assets/images/YLF  speakers.png" class="responsive"> -->
         </div>
-        <div class="card-group" style="background: transparent;padding: 30px;">
-            <div class="card" style="background: transparent;height:max-content">
-              <img class="card-img-top" src="../../../assets/images/pinarayi.png" alt="Card image cap" >
-            </div>
-            <div class="card" style="background: transparent;">
-              <img class="card-img-bottom" src="../../../assets/images/benyamin.png" alt="Card image cap" >
-            </div>
-            <div class="card" style="background: transparent;">
-                <img class="card-img-top" src="../../../assets/images/arundhatiroy.png" alt="Card image cap">
-              </div>
+        <div class="card-group" style="background: transparent;padding-left: 90px;">
+
+          <div class="card" style="background: transparent;">
+            <img alt="Card image cap" class="card-img-top img-fluid" 
+            src="../../../assets/images/pinarayi.png"  />
+           
           </div>
-          <div class="card-group" style="background: transparent;padding: 30px;">
+
+          <div class="card" style="background: transparent;">
+            <img alt="Card image cap" class="card-img-top img-fluid" src="../../../assets/images/benyamin.png" />
+           
+          </div>
+
+          <div class="card" style="background: transparent;">
+            <img alt="Card image cap" class="card-img-top img-fluid" src="../../../assets/images/arundhatiroy.png" />
+          </div> 
+
+
+
+           
+          </div>
+          <div class="card-group" style="background: transparent;padding-left: 90px;">
             <div class="card" style="background: transparent;">
-              <img class="card-img-top" src="../../../assets/images/geetanjali.png" alt="Card image cap" >
+              <img alt="Card image cap" class="card-img-top img-fluid" src="../../../assets/images/geetanjali.png" />
+            
             </div>
             <div class="card" style="background: transparent;">
-              <img class="card-img-top" src="../../../assets/images/ns madhavan.png" alt="Card image cap" >
+              <img alt="Card image cap" class="card-img-top img-fluid" src="../../../assets/images/ns madhavan.png" />
+              
             </div>
             <div class="card" style="background: transparent;">
-                <img class="card-img-top" src="../../../assets/images/sachid.png" alt="Card image cap" >
-              </div>
+              <img alt="Card image cap" class="card-img-top img-fluid" src="../../../assets/images/ksachi.png" />
+              
+            </div>
           </div>
            
             <div class="row row1_speakers justify-content-center">
@@ -150,8 +171,8 @@
                 Copyright © Yuvadhara Youth Literature Festival 2023
               </div>
               <div>
-                <img src="../../../assets/images/insta.png" alt="" class="footer_icons">
-                <img src="../../../assets/images/facebook.png" alt="" class="footer_icons" >
+                <a href="https://www.instagram.com/youthlitfestival/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="../../../assets/images/insta.png" alt="" class="footer_icons"></a>
+                <a href="https://www.facebook.com/profile.php?id=100091290687060&mibextid=ZbWKwL" target="_blank"><img src="../../../assets/images/facebook.png" alt="" class="footer_icons" ></a>
                 <img src="../../../assets/images/twitter.png" alt="" class="footer_icons">
                 <img src="../../../assets/images/youtube.png" alt="" class="footer_icons">     
               </div>   
@@ -161,7 +182,7 @@
 
 
 
-          <div><a href="#header1"><img src="../../../assets/images/bottom redbutton.png"  width="30" height="30" ></a></div>
+          <div style="padding-left: 30px ;"><a href="#header1"><img src="../../../assets/images/bottom redbutton.png"  width="30" height="30" ></a></div>
         
       </div>
     </div>

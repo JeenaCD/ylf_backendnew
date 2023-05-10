@@ -14,6 +14,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { UpiComponent } from './components/upi/upi.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { IppoComponent } from './components/ippo/ippo.component';
+import { SpeakersComponent } from './components/speakers/speakers.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { IppoComponent } from './components/ippo/ippo.component';
     HeaderComponent,
     UpiComponent,
     PaymentComponent,
-    IppoComponent
+    IppoComponent,
+    SpeakersComponent
   ],
   imports: [
     BrowserModule,

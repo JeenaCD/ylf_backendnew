@@ -26,4 +26,10 @@ export class RegistrationComponent implements OnInit {
     console.log(this.regis);
   }
 
+  downloadPDF(){
+    let link = document.createElement("a");
+    link.download = "jeena.pdf";
+    link.href = "assets/ylf Logo.pdf";
+    link.click();
+  }
 }

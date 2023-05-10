@@ -1,0 +1,68 @@
+.registerpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.header{
+    background-image: url("/assets/images/background.png");
+    /* height: 132px; */
+    display: flex;
+    
+}
+
+download:hover{
+    background-image: url("/assets/images/background.png");
+    text-decoration: none;
+}
+
+.responsivehead {
+    max-width: 100%;
+}
+
+
+.head_button{
+        font-size: 25px;
+        font-family: "Bodwars";
+        color: rgb(255, 255, 255);      
+}
+
+#headnav{
+    font-size: 25px;
+    font-family: "Bodwars";
+    color: rgb(255, 255, 255);
+}
+
+
+.card{
+    border:none;
+}
+
+
+.card-img-top {
+    width: 85%;
+    height: 70%;
+}
+
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .title1{
+    background-color: #249f49;
+  }
+
+  .title2{
+    background-color: #f9bb13;
+  }
+  .title3{
+    background-color: #3e57a3;
+  }
+
+  .image_size{
+    height:60%;
+    width:60%;
+  }
